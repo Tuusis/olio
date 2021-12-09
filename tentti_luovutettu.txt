@@ -28,4 +28,6 @@ public class Tv {
     }
 }
 
-
+// tälle en keksi mitään käyttöä
+// Create an object 
+// Tv tv = new Tv();
