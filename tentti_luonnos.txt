@@ -1,0 +1,94 @@
+1. Create a class called Tv. The class has two attributes channel and isOn
+
+1.1 channel: what is the number of the current channel (like 0-9)
+
+1.2 isOn is true if the TV is on and false if the TV is off.
+
+2. Create a default constructor, where you assign the channel to 1 and isOn to true.
+
+3. Create a method shutdown. The method changes the isOn to false and prints “TV is off” to the console.
+
+4. Create method changeChannel. The method has one parameter. When called, you can change the channel using the parameter. For example changeChannel(5) will assign 5 to value of the channel attribute. And last, print the channel to the console like this: Channel is 5
+
+Notice! The type of this CodeRunner is Java class, so submit only the Tv class.
+
+
+
+Test case example:
+
+// Create an object 
+Tv tv = new Tv();
+
+// Call changeChannel method
+tv.changeChannel(9);
+
+// Call shutdown method
+tv.shutdown();
+
+The console output should be:
+
+Channel is 9
+TV is off
+
+mun "koodi"
+public class Tv {
+
+    private int channel;
+    private boolean isOn;
+    
+    public Tv(String tilaAlussa) {
+        this.channel = 1; //oletuskanava 1
+        this.isOn = true; //oletus tv on paalla
+    }
+    
+    public void changeChannel(int newchannel) {
+        this.channel = newchannel;
+    }
+    
+    public int getchannel() {
+        return this.channel;
+    }
+    
+    public void tulostatv() {
+        System.out.println("Channel is " + this.channel);
+        //System.out.println("TV is " + this.isOn);
+    }
+}
+
+
+virheet
+Syntax Error(s)
+__tester__.java:34: error: constructor Tv in class Tv cannot be applied to given types;
+Tv tv = new Tv();
+        ^
+  required: String
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+__tester__.java:40: error: cannot find symbol
+tv.shutdown();
+  ^
+  symbol:   method shutdown()
+  location: variable tv of type Tv
+2 errors
+
+
+
+
+
+Copy the codes from the step 1. In this assignment we develop the Tv class further. This is again Java class question, so submit only the Tv class. Notice, that there will be a few hidden test cases. 
+
+
+
+Encapsulate the class
+Set all attributes so that they cannot be accessed outside of the class.
+Create a getter method for the channel attribute. The name of the getter method should be getChannel. The getChannel getter method returns the current channel. 
+Methods should be accessible outside of the class.
+
+
+Test case example
+Tv tv = new Tv();
+System.out.println(tv.getChannel());
+
+
+The output should be
+1
