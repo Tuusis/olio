@@ -1,0 +1,27 @@
+
+public class Tv {
+
+    private int channel;
+    private boolean isOn;
+    
+    public Tv(String tilaAlussa) {
+        this.channel = 1; //oletuskanava 1
+        this.isOn = true; //oletus tv on paalla
+    }
+    
+    public void changeChannel(int newchannel) {
+        this.channel = newchannel;
+    }
+    
+    public int getchannel() {
+        return this.channel;
+    }
+    
+    public void tulostatv() {
+        System.out.println("Channel is " + this.channel);
+        //System.out.println("TV is " + this.isOn);
+    }
+}
+
+
+//tentin vastaus valmistui tähän asti
