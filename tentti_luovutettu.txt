@@ -1,3 +1,4 @@
+//tentin vastaus valmistui tähän asti vain notepadilla kun eclipse ei käynnisty
 
 public class Tv {
 
@@ -17,6 +18,10 @@ public class Tv {
         return this.channel;
     }
     
+    public void shutdown() {
+        this.isOn = false; //tämä sulkenee telkkarin?
+    }
+
     public void tulostatv() {
         System.out.println("Channel is " + this.channel);
         //System.out.println("TV is " + this.isOn);
@@ -24,4 +29,3 @@ public class Tv {
 }
 
 
-//tentin vastaus valmistui tähän asti
